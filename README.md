@@ -1,5 +1,11 @@
 # emilioroche.github.io
-personal website using github pages (Jekyll build), will be doing multiple iterations to get a handle what works best for me.
+personal website using github pages (Jekyll build), will be doing multiple iterations to get a handle what works best for me. Will be pushing to main branch first before merging to gh-pages where it will deployed by github to live site
+
+updates:
+- changed theme from default to dark
 
 
-will change this back to .md file once I get a theme going so Jekyll stops using this as the default file to use for content/styling
+to do:
+- introduce title separators
+- add site subtitle for version (1.*)
+- essentially look over styling
