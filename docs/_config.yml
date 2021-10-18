@@ -18,17 +18,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Emilio Roche's website
+title: Emilio Roche
+subtitle: "Version 1.0"
 email: emiliosroche@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the first version of my personal website (v1), will be testing out the static
-  website capabilities and will be implementing dynamic capabilities in v2
+description: "This is my personal website (v1)" # this means to ignore newlines until "baseurl:"
 domain: emilioroche.github.io
 #baseurl: /emilioroche.github.io # the subpath of your site, e.g. /blog
 repository: EmilioRoche/emilioroche.github.io
 url: https://emilioroche.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  EmilioRoche
+
+author:
+  name: "Emilio Roche"
+  avatar: "/assets/images/me.png"
+  bio: "4th year CS Student at Dalhousie University"
+  location: "Halifax, Canada"
+  twitter: ""
+  linkedin: "emilio-roche"
+  github: "EmilioRoche"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "emiliosroche@gmail.com"
 
 # Build settings
 #theme: minimal-mistakes-jekyll

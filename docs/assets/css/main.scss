@@ -1,7 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+//$link-color: red;
+//need to be done before any imports
 @charset "utf-8";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | dark: 'dark' }}"; // skin
 @import "minimal-mistakes"; // main partials
