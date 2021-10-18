@@ -32,19 +32,8 @@ twitter_username: jekyllrb
 github_username:  EmilioRoche
 
 #site author
-author:
-    name: "Emilio Roche"
-    avatar: "/assets/images/me.png"
-    bio: "4th year CS Student at Dalhousie University"
-    location: "Halifax, Canada"
-    twitter: "https://twitter.com/emiliosroche"
-    linkedin: "emilio-roche"
-    github: "EmilioRoche"
-    links:
-      - label: "Email"
-        icon: "fas fa-fw fa-envelope-square"
-        url: "emiliosroche@gmail.com"
-
+author: Emilio Roche
+    
 
 # Build settings
 #theme: minimal-mistakes-jekyll
