@@ -3,9 +3,10 @@ personal website using github pages (Jekyll build), will be doing multiple itera
 
 updates:
 - changed theme from default to dark
+- added profile on main page with contact info + bio
+- added navigation bar
 
 
 to do:
-- introduce title separators
-- add site subtitle for version (1.*)
 - essentially look over styling
+- any styling from _sass/ needs to be done in the assets/css/main.scss file
