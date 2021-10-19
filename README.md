@@ -10,3 +10,4 @@ updates:
 to do:
 - essentially look over styling
 - any styling from _sass/ needs to be done in the assets/css/main.scss file
+- start looking into adding content into 'posts' section
