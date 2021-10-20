@@ -1,6 +1,6 @@
 main:
-  - title: "Project "
-    url: /docs/quick-start-guide/
+  - title: "Projects"
+    url: /projects/
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
