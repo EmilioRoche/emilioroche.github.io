@@ -1,11 +1,10 @@
 main:
+  - title: "About"
+    url: /About/
   - title: "Projects"
-    url: /projects/
+    url: /Projects/
   - title: "Posts"
-    url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Pages"
-    url: /page-archive/
+    url: /posts/
+    ##photo dump
+  ## - title: "Photo Dump"
+  ##   url: /tags/
