@@ -1,6 +1,6 @@
 ---
 #title: "Cape Breton splash page"
-layout: single
+layout: home
 author_profile: true
 title: "Home Page"
 permalink: /
@@ -12,5 +12,5 @@ classes: wide
 ---
 
 ## The site
-This site is a personal one where I can keep track of any projects I have been working on, as well write/document
-my progress on said projects for reference.
+Welcome! This site is a personal one where I can keep track of any projects I have been working on, as well write/document
+my progress on said projects using [posts](/posts/) for reference.
