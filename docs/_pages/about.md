@@ -10,11 +10,7 @@ header:
 author_profile: true
 classes: wide
 ---
-
-## About me
-
-<figure style="width: 50%; " class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/cape-breton.jpg" alt="">
+## Me
+<figure style="width: 30%; " class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sunset.jpg" alt="">
 </figure>
-
-info
