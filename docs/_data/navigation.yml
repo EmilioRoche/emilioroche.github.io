@@ -3,7 +3,7 @@ main:
     url:   /about/
   - title: "Resume"
     url: /assets/docs/resume-EmilioRoche.pdf
-  - title: "Projects"
-    url:   /projects/
+  #- title: "Projects"
+    #url:   /projects/
   - title: "Archive"
     url:   /archive/
