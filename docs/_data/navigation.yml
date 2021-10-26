@@ -1,10 +1,9 @@
 main:
   - title: "About"
-    url: /about/
+    url:   /about/
+  - title: "Resume"
+    url: /assets/docs/resume-EmilioRoche.pdf
   - title: "Projects"
-    url: /projects/
+    url:   /projects/
   - title: "Archive"
-    url: /archive/
-    ##photo dump
-  ## - title: "Photo Dump"
-  ##   url: /tags/
+    url:   /archive/
