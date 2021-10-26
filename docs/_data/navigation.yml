@@ -1,10 +1,10 @@
 main:
   - title: "About"
-    url: /About/
+    url: /about/
   - title: "Projects"
-    url: /Projects/
-  - title: "Posts"
-    url: /posts/
+    url: /projects/
+  - title: "Archive"
+    url: /archive/
     ##photo dump
   ## - title: "Photo Dump"
   ##   url: /tags/

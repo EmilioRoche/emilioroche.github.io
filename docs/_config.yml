@@ -34,7 +34,15 @@ github_username:  EmilioRoche
 #site author
 author: Emilio Roche
 
-
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
 include:
     - _pages
 # Build settings
