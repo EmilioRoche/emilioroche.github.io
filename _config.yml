@@ -28,21 +28,14 @@ domain: emilioroche.github.io
 #baseurl: /emilioroche.github.io # the subpath of your site, e.g. /blog
 repository: EmilioRoche/emilioroche.github.io
 url: https://emilioroche.github.io # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # the subpath of your site, e.g. "/blog"
 twitter_username: jekyllrb
 github_username:  EmilioRoche
 
 #site author
 author: Emilio Roche
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
+
 include:
     - _pages
 # Build settings
