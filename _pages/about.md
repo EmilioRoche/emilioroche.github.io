@@ -12,5 +12,5 @@ classes: wide
 ---
 ## Me
 <figure style="width: 30%; " class="align-right">
-  <img src="{{ site.url }}{{ baseurl }}/assets/images/sunset.jpg" alt="">
+  <img src="{{ url }}{{ baseurl }}/assets/images/sunset.jpg" alt="">
 </figure>
