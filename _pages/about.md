@@ -11,6 +11,8 @@ author_profile: true
 classes: wide
 ---
 ## Me
-<figure style="width: 30%; " class="align-right">
+-under construction- 
+<!--- This is an HTML comment in Markdown <figure style="width: 30%; " class="align-right">
   <img src="{{ site.url }}{{ baseurl }}/assets/images/sunset.JPG" alt="">
 </figure>
+-->
