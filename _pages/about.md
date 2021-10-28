@@ -11,8 +11,7 @@ author_profile: true
 classes: wide
 ---
 ## Me
--under construction- 
-<!--- This is an HTML comment in Markdown <figure style="width: 30%; " class="align-right">
+<figure style="width: 30%; " class="align-right">
   <img src="{{ site.url }}{{ baseurl }}/assets/images/sunset.JPG" alt="">
 </figure>
--->
+In my last year of my undergrad at Dalhousie University. I will be graduating in May of 2022 with a Bachelors of Computer Science with a certificate in Cyber Security & Network Communications.
