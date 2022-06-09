@@ -14,7 +14,7 @@ classes: wide
 <figure style="width: 30%; " class="align-right">
   <img src="{{ site.url }}{{ baseurl }}/assets/images/sunset.JPG" alt="">
 </figure>
->In my last year of my undergrad at Dalhousie University. I will be graduating in May of 2022 with a Bachelors of Computer Science with a certificate in Cyber Security & Network Communications.
+>Fresh CS grad with a Bachelors of Computer Science with a certificate in Cyber Security & Network Communications at Dalhousie University.
 
 When I graduated high school, I had no idea what I wanted to do, and so I ended up taking a year off to work + explore different career paths. I took an interest in Computer Science, as I was intrigued with the problem solving skill needed for designing and developing software.
 
