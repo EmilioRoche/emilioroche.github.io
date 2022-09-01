@@ -10,4 +10,4 @@ header:
 author_profile: true
 classes: wide
 ---
-Me and my projects
+Me and my projects (in progress, haven't uploaded them yet).
