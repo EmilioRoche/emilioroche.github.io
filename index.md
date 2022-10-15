@@ -12,5 +12,5 @@ classes: wide
 ---
 
 ## The site
-Welcome! This site is a personal one where I can keep track of any projects I have been working on, as well write/document
-my progress on said projects using [projects](/projects/) for reference.
+
+Welcome! This site is a personal one where I can keep track of any projects I have been working on, using [projects](/projects/) for reference.

@@ -1,9 +1,9 @@
 main:
   - title: "About"
-    url:   /about/
+    url: /about/
   - title: "Resume"
     url: /assets/docs/resume-EmilioRoche.pdf
   - title: "Projects"
-    url:   /projects/
-  - title: "Archive"
-    url:   /archive/
+    url: /projects/
+  - title: "Research Project"
+    url: /assets/docs/ResearchProject.pdf
