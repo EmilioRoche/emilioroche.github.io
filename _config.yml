@@ -30,14 +30,13 @@ repository: EmilioRoche/emilioroche.github.io
 url: https://emilioroche.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. "/blog"
 twitter_username: jekyllrb
-github_username:  EmilioRoche
+github_username: EmilioRoche
 
 #site author
-author: Emilio Roche
-
+#author: Emilio Roche
 
 include:
-    - _pages
+  - _pages
 # Build settings
 #theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -46,6 +45,35 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+author:
+  name: "Emilio Roche"
+  avatar: "/assets/images/Lake-Louise.jpg"
+  bio: "Fresh CS Grad from Dalhousie University"
+  location: "Calgary, Alberta, Canada"
+  email:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "emiliosroche@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/EmilioRoche/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/EmilioRoche/"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

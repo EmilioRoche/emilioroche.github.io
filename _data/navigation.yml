@@ -7,3 +7,5 @@ main:
     url: /projects/
   - title: "Research Project"
     url: /assets/docs/ResearchProject.pdf
+  - title: "Archive"
+    url: /archive/

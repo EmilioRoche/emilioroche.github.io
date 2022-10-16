@@ -1,1 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-15T13:25:07-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emilio Roche</title><subtitle>This is my personal website (v1)</subtitle><author><name>Emilio Roche</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-15T21:16:34-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emilio Roche</title><subtitle>This is my personal website (v1)</subtitle><author><name>Emilio Roche</name></author><entry><title type="html">Setting up Docker (basics)</title><link href="http://localhost:4000/2022/10/15/Setting-up-Docker.html" rel="alternate" type="text/html" title="Setting up Docker (basics)" /><published>2022-10-15T00:00:00-06:00</published><updated>2022-10-15T00:00:00-06:00</updated><id>http://localhost:4000/2022/10/15/Setting-up-Docker</id><content type="html" xml:base="http://localhost:4000/2022/10/15/Setting-up-Docker.html">&lt;p&gt;I have recently starting using Docker for a few projects, and wanted to share how to get it set up on your machine.&lt;/p&gt;
+
+&lt;p&gt;In this post I describe how to download Docker, get it configured on your machine, and start running your first Docker file.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-downloading-and-installing-docker&quot;&gt;1. Downloading and Installing Docker&lt;/h2&gt;
+
+&lt;p&gt;Head over to the &lt;a href=&quot;https://www.docker.com&quot;&gt;Docker&lt;/a&gt; website and install the Docker version for your machine. I currently use the Apple version, but Docker is
+multi-platform, so can run containers on any system.&lt;/p&gt;
+
+&lt;p&gt;I would also recommend downloading &lt;a href=&quot;https://www.docker.com/products/docker-desktop/&quot;&gt;Docker Desktop&lt;/a&gt;. It makes visualizing and interacting with images &amp;amp; containers easier, but isn’t necessary.
+It provides a personal plan for free.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-using-creating-and-building-an-image&quot;&gt;2. Using, Creating and Building an image&lt;/h2&gt;
+
+&lt;p&gt;In a terminal, you can run the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run hello-world&lt;/code&gt;. This will run an image called “hello-world”. Docker will look for an image named “hello-world” on your local machine, and if it can’t find it, it will download it online from &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;. There you can download and run different images like &lt;strong&gt;python&lt;/strong&gt;, &lt;strong&gt;ubuntu&lt;/strong&gt;, &lt;strong&gt;postgres&lt;/strong&gt; and many more.&lt;/p&gt;
+
+&lt;p&gt;To create a new Docker image on an existing project, in your root folder, create a new file called &lt;strong&gt;Dockerfile&lt;/strong&gt;. The format is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INSTRUCTION arguments
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So an example of a nodeJS image would look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;## specifies the base image, in this case,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##using node version 16 as base image&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; node:16&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#Setting a working directory named '/app'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WORKDIR&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; /app&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#Copy over a file into the working directory&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#(you can use * as a wildcard to match any text)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; package*.json /app&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##Copy my current project's src folder into the&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##working directory app/src folder&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; src /app/src&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;##Running `npm install` installs all dependencies needed&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##for the application&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;RUN &lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##Here I am binding the port 5200 to the host system and the&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##port 80 to the Docker container.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;EXPOSE&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; 5200:80&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#provides a command with arguments to be used&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CMD&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; [&quot;npm&quot;, &quot;run&quot;, &quot;serve&quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can now build this image with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker build -t NAME-IMAGE .&lt;/code&gt;, the -t flag allows you to name your image, and the period specifies the current directory.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-running-a-containerimage&quot;&gt;3. Running a container/image&lt;/h2&gt;
+
+&lt;p&gt;To run it, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -d IMAGE-NAME&lt;/code&gt;, the -d flag specifies it running in detached mode. Great! Now your image is now running in a container. In my case,
+I can go to a browser, navigate to &lt;strong&gt;localhost:5200&lt;/strong&gt; and see my application running.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-docker-desktop-docker-compose-and-docker-hub&quot;&gt;4. Docker Desktop, Docker Compose, and Docker Hub&lt;/h2&gt;
+
+&lt;p&gt;Even though I know the command line arguments for running a Docker image, I prefer using Docker Desktop since it is a great interface for setting ports and environment variables.
+If you use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;env.&lt;/code&gt; file in your project, and it is included in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;, unfortunately Docker won’t include it (or any file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;) in the image. Even with
+specifying environment variables in Docker Desktop, it can get tedious if you have many environment variables.&lt;/p&gt;
+
+&lt;p&gt;A solution for this is Docker Compose (which should already be downloaded
+with your download of Docker Desktop). Docker Compose can include those environment variables in the image when writing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file (I will write a complete post on
+Docker Compose later on).&lt;/p&gt;
+
+&lt;p&gt;My last note is if you use Docker Desktop and/or work on a project that multiple people use, I would highly recommend creating an account with &lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker Hub&lt;/a&gt;.
+There you can create Docker repositories, and share Docker images with other collaborators for distributing images easily.&lt;/p&gt;</content><author><name>Emilio Roche</name></author><category term="Docker" /><summary type="html">How to get Docker setup on your machine</summary></entry></feed>
