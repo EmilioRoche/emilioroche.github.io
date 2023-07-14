@@ -14,7 +14,7 @@ sports-stats-app:
   - image_path: assets/gif/sports-app.gif
     alt: "Football League App"
     title: "Football Stats App"
-    excerpt: "A Web React application I created to display Football Stats from my 6 favourite leagues around the world. Standings data is automatically updated once every week on Mondays, done with Github Actions, on a Workflow Cron Job. Link to [live site](https://emilioroche.github.io/sports-stats/) (if still up)."
+    excerpt: "A Web React application I created to display Football Stats from my 6 favourite leagues around the world. Standings data is automatically updated once every week on Mondays, done with Github Actions, on a Workflow Cron Job. Link to [live site](https://emilioroche.github.io/sports-stats/) is down until I find a replacement hosting service as Heroku got rid of free Dynos."
     url: "https://github.com/EmilioRoche/sports-stats"
     btn_label: "Demo"
     btn_class: "btn--primary"
