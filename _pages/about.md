@@ -22,10 +22,9 @@ When I graduated high school, I had no idea what I wanted to do, and so I ended 
 
 During my undergrad, I completed 3 co-ops, in which 2 of them I was developing on a web application. Both co-ops were managed with the **Agile** methodology for their projects and developed their application using **AngularJS Framework** applying either **TypeScript** or **JavaScript** as its primary language.
 
-After graduating, I have been volunteering my time at a non-profit organization as a **Backend Developer** for their application. We are currently using **MongoDB** for database management, **NodeJS** with **Typescript** for our backend, and using **Azure** for hosting. Other Tools being used are **Docker** for container management.
+After graduating, I have volunteered my time at a non-profit organization as a **Backend Developer** for their application. They use **MongoDB** for database management, **NodeJS** with **Typescript** for the backend, and using **Azure** for hosting. Other Tools being used are **Docker** for container management.
 
-I am currently looking for job opportunities as a **Junior Developer**/**Software Developer**/**Software Engineer**
-
+I am currently employed as a **Junior Full-Stack Developer**
 ### My interests
 
 - Frontend Web Development
