@@ -24,7 +24,7 @@ During my undergrad, I completed 3 co-ops, in which 2 of them I was developing o
 
 After graduating, I volunteered my time at a non-profit organization as a **Backend Developer** for their application. They use **MongoDB** for database management, **NodeJS** with **Typescript** for the backend, and using **Azure** for hosting. Other Tools being used are **Docker** for container management.
 
-I am currently employed as a **Full-Stack Developer** at Katipult.
+I am currently employed as a **Full-Stack Developer** at Markette.
 ### My interests
 
 - Software Development
