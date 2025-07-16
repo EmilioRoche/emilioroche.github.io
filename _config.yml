@@ -52,15 +52,15 @@ author:
   location: "Calgary, Canada"
   email:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "emiliosroche@gmail.com"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "emiliosroche@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EmilioRoche/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/EmilioRoche/"
+      url: "https://www.linkedin.com/in/emilio-roche/"
 
 defaults:
   # _posts
